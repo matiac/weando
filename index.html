@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Weando</title>
+        <style>
+            body {
+                margin: 0px;
+                min-height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #cajita {
+                border: 2px solid black;
+            }
+
+            #pestañas {
+                display: flex;
+            }
+
+            .pestaña {
+                border: 2px solid black;
+                padding: 1em;
+                cursor: pointer;
+            }
+
+            #contenido {
+                border: 2px solid black;
+                padding: 1em;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="cajita">
+            <div id="pestañas">
+                <button class="pestaña" onclick="cambiar(1)">Pestaña 1</button>
+                <button class="pestaña" onclick="cambiar(2)">Pestaña 2</button>
+            </div>
+
+            <div id="contenido">
+                <p>Contenido 1</p>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        const contenidos = [
+            'Hola, amiguitos, este es el contenido 1', // contenidos[0]
+            'Qué paza chorizos, este es el contenido 2', // contenidos[1]
+        ];
+
+        function cambiar(tab) {
+            // tab = 1
+            const contenido = contenidos[tab];
+
+            // console.log(contenido);
+        }
+    </script>
+</html>
